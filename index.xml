@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science Portfolio on Sam Majumder</title>
+    <link>https://SamMajumder.github.io/Sam_Portfolio/</link>
+    <description>Recent content in Data Science Portfolio on Sam Majumder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 11:14:48 -0400</lastBuildDate><atom:link href="https://SamMajumder.github.io/Sam_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project3a_yieldmodelling/</link>
+      <pubDate>Sun, 12 Dec 2021 11:14:48 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project3a_yieldmodelling/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND :
+Crop sunflower is an important agricultural crop and is grown globally as an oilseed. In the United States, crop sunflower is one of the most important agricultural crops, after soybean and corn. General agricultural practices of a specific year, weather and soil characteristics of a specific geographical location are influential in the overall crop yield.</description>
+    </item>
+    
+    <item>
+      <title>Project #2C What leaf traits influence allocation of resources to the reproductive organs in plants ?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project2c_resource_allocationrmf/</link>
+      <pubDate>Mon, 11 Jan 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project2c_resource_allocationrmf/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND: This is a continuation of Project #2A and #2B and in this project we aim to answer similar questions pertaining to allocation of resources in plants. We focus on the leaf traits which might influence the mobilization of resources to the reproductive organs. Allocation patterns are studied in plants to ascertain how plants might prioritize the resource allocation of one organ over another and to understand the limiting factors to biomass allocation.</description>
+    </item>
+    
+    <item>
+      <title>Project #2D What leaf traits influence allocation of resources to the plant stem?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project2d_resource_allocation_smf/</link>
+      <pubDate>Mon, 11 Jan 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project2d_resource_allocation_smf/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND:
+This is a continuation of Project #2A, #2B and #2C and in this project we aim to answer similar questions pertaining to allocation of resources in plants. We focus on the leaf traits which might influence the mobilization of resources to the stem. Allocation patterns are studied in plants to ascertain how plants might prioritize the resource allocation of one organ over another and to understand the limiting factors to biomass allocation.</description>
+    </item>
+    
+    <item>
+      <title>Project #2E What leaf traits influence allocation of resources to plant roots?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project_2e_resource_allocation_wpbmf/</link>
+      <pubDate>Mon, 11 Jan 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project_2e_resource_allocation_wpbmf/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND: This is a continuation of Project #2A, #2B, #2C and #2D and in this project we aim to answer similar questions pertaining to allocation of resources in plants. We focus on the leaf traits which might influence the mobilization of resources to the roots. Allocation patterns are studied in plants to ascertain how plants might prioritize the resource allocation of one organ over another and to understand the limiting factors to biomass allocation.</description>
+    </item>
+    
+    <item>
+      <title>Project #1D What are the most phenotypically divergent traits in the South Eastern Perennial clade of wild sunflowers?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project1d_southeasternperennials/</link>
+      <pubDate>Sun, 10 Jan 2021 11:00:59 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project1d_southeasternperennials/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND:
+This project is a continuation of Project #1B. Here we seek to answer the same questions except we are containing ourselves to only the perennial clade of the Helianthus (wild Sunflower) genus. In contrast to the annual clade, the perennial clade of sunflowers return in the spring and are usually much more resilient to cold weather.</description>
+    </item>
+    
+    <item>
+      <title>Project #2A Which leaf traits drive resource allocation in wild sunflowers?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project2a_resource_allocation_biomass/</link>
+      <pubDate>Sun, 10 Jan 2021 11:00:59 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project2a_resource_allocation_biomass/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND:
+Plants mobilize and remobilize resources to its different organs, for example, resource is mobilized to leaves along with root and stem during growth and prior to flowering resource is allocated to seeds from leaves. Resource is mobilized from leaves to the other parts of the plant as well. Allocation patterns are studied in plants to ascertain how plants might prioritize the resource allocation of one organ over another and to understand the limiting factors to biomass allocation.</description>
+    </item>
+    
+    <item>
+      <title>Project #2B What leaf traits influence allocation of resources to the leaf ?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project2b_resource_allocation_leaf_mass_fraction/</link>
+      <pubDate>Sun, 10 Jan 2021 11:00:59 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project2b_resource_allocation_leaf_mass_fraction/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND: This is a continuation of Project #2A and in this project we aim to answer similar questions pertaining to allocation of resources in plants. We focus on the leaf traits which might influence the mobilization of resources to the leaves. Allocation patterns are studied in plants to ascertain how plants might prioritize the resource allocation of one organ over another and to understand the limiting factors to biomass allocation.</description>
+    </item>
+    
+    <item>
+      <title>Project #1A What are the most phenotypically divergent traits in wild sunflowers?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project1a_genus/</link>
+      <pubDate>Tue, 05 Jan 2021 10:58:08 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project1a_genus/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND:
+Plants diversify across multiple trait axes and this is a hallmark of plant evolution. Some of these traits relate to the fitness of a species and also sheds light on the life history strategies. These traits are known as functional traits amongst ecologists and plant physiologists and tells us about how plants evolve and interact with their environment.</description>
+    </item>
+    
+    <item>
+      <title>Project #1B What are the most phenotypically divergent traits in the Annual clade of wild sunflowers?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project1b_annuals/</link>
+      <pubDate>Tue, 05 Jan 2021 10:58:08 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project1b_annuals/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND:
+This project is a continuation of Project #1A. Here we seek to answer the same questions except we are containing ourselves to only the annual clade of the Helianthus (wild Sunflower) genus. A clade in evolutionary biology refers to species which have a common ancestor. The annual sunflowers perform their life-cycle within one growing season.</description>
+    </item>
+    
+    <item>
+      <title>Project #1C What are the most phenotypically divergent traits in the Perennial clade of wild sunflowers?</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/post/project1c_perennials/</link>
+      <pubDate>Tue, 05 Jan 2021 10:58:08 -0400</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/post/project1c_perennials/</guid>
+      <description>The code for this project can be found on my GitHub
+Link to GitHub Repository
+BACKGROUND:
+This project is a continuation of Project #1B. Here we seek to answer the same questions except we are containing ourselves to only the perennial clade of the Helianthus (wild Sunflower) genus. In contrast to the annual clade, the perennial clade of sunflowers return in the spring and are usually much more resilient to cold weather.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://SamMajumder.github.io/Sam_Portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://SamMajumder.github.io/Sam_Portfolio/contact/</guid>
+      <description>My social media and email
+   Platform URL     LinkedIn: https://www.linkedin.com/in/sam-majumder-25720870/   GitHub: https://github.com/SamMajumder   Email: sambadimajumder@gmail.com    </description>
+    </item>
+    
+  </channel>
+</rss>

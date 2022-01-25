@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scene on Sam Majumder</title>
+    <link>https://example.com/tags/scene/</link>
+    <description>Recent content in scene on Sam Majumder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 10:58:08 -0400</lastBuildDate><atom:link href="https://example.com/tags/scene/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project #1 Machine Learning approaches in investigating trait divergence under species diversification at different taxonomic scales in wild Helianthus species</title>
+      <link>https://example.com/post/chapter-1/</link>
+      <pubDate>Tue, 05 Jan 2021 10:58:08 -0400</pubDate>
+      
+      <guid>https://example.com/post/chapter-1/</guid>
+      <description>Trait based identification in plants using dichotomous keys have seen widespread use in biology (Tilling 1984, Edwards et al. 1987) because they are a convenient and an inexpensive method of species identification when tissue sample collection is not be feasible (Will and Rubinoff 2004). Improving this process of identification by way of reducing the number of traits required can be incredibly beneficial and cost effective for big projects where the use of genetic tools might not be possible (Gallo and Waitt, 2011; Roy et al.</description>
+    </item>
+    
+    <item>
+      <title>Project #4 Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation</title>
+      <link>https://example.com/post/chapter-4/</link>
+      <pubDate>Thu, 12 Jan 2017 11:14:48 -0400</pubDate>
+      
+      <guid>https://example.com/post/chapter-4/</guid>
+      <description>Problem Statement
+This study centered around answering three pertinent questions about crop sunflower cultivation in the U.S. These were:
+  What are the most important weather factors and soil characteristics that tends to influence seed yield?
+  What are the most important weather and soil characteristics that tends to influence crop failure?
+  Is it possible to build a predictive model that would be able to predict seed yield and crop failure values close to the actual historical values by taking the most important weather factors and soil characteristics as input?</description>
+    </item>
+    
+  </channel>
+</rss>

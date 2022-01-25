@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation | Sam Majumder</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="A brief description and key findings of this study">
+    <meta name="generator" content="Hugo 0.92.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="https://SamMajumder.github.io/Sam_Portfolio/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation" />
+<meta property="og:description" content="A brief description and key findings of this study" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://SamMajumder.github.io/Sam_Portfolio/post/project3a_yieldmodelling/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-12T11:14:48-04:00" />
+<meta property="article:modified_time" content="2021-12-12T11:14:48-04:00" /><meta property="og:site_name" content="Sam Majumder" />
+
+<meta itemprop="name" content="Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation">
+<meta itemprop="description" content="A brief description and key findings of this study"><meta itemprop="datePublished" content="2021-12-12T11:14:48-04:00" />
+<meta itemprop="dateModified" content="2021-12-12T11:14:48-04:00" />
+<meta itemprop="wordCount" content="2473">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation"/>
+<meta name="twitter:description" content="A brief description and key findings of this study"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://SamMajumder.github.io/Sam_Portfolio/images/Futuristic.jpg');">
+    <div class="pb3-m pb6-l bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://SamMajumder.github.io/Sam_Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Sam Majumder
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://SamMajumder.github.io/Sam_Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://SamMajumder.github.io/Sam_Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://SamMajumder.github.io/Sam_Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="https://www.instagram.com/sam_majumder_/" target="_blank" class="instagram ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }};"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+  
+    <a href="https://github.com/SamMajumder" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+  
+</div>
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              A brief description and key findings of this study
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project #4A Using Machine Learning and GIS to gain novel insight into crop sunflower cultivation</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-12-12T11:14:48-04:00">December 12, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>The code for this project can be found on my GitHub</p>
+<p><a href="https://github.com/SamMajumder/Project_3A_Yield_Modelling">Link to GitHub Repository</a></p>
+<p>BACKGROUND :</p>
+<p>Crop sunflower is an important agricultural crop and is grown globally as an oilseed. In the United States, crop sunflower is one of the most important agricultural crops, after soybean and corn. General agricultural practices of a specific year, weather and soil characteristics of a specific geographical location are influential in the overall crop yield. This study aimed to identify the important geographic, weather and soil factors that has potentially influenced crop yield in the U.S.</p>
+<p>RESEARCH QUESTION:</p>
+<p>This study centered around answering three pertinent questions about crop sunflower cultivation in the U.S. These were:</p>
+<ol>
+<li>
+<p>What are the most important weather factors and soil characteristics that tends to influence seed yield?</p>
+</li>
+<li>
+<p>Is it possible to build a predictive model that would be able to predict seed yield close to the actual historical values by taking the most important weather factors and soil characteristics as input?</p>
+</li>
+</ol>
+<p>DATA:</p>
+<p>Crop Yield, weather and soil data was collected from a total of 347 counties across eight states. These states were North Dakota, South Dakota, Minnesota, Nebraska, Kansas, Texas, Colorado, and California. The crop yield and weather data spanned from 1976 to 2019 and thus can be categorized as spatiotemporal data. However, the soil data was assumed to be stagnant across different timepoints and thus had a spatial quality to it but not a temporal quality. Specific information about each of the data used in this study are:</p>
+<ol>
+<li>
+<p>Historical crop yield data as well as data pertaining to total area planted and total area harvested were downloaded as comma separated files from the National Agricultural Statistics Service which is a part of the United States Department of Agriculture (USDA) database (Link: <a href="https://www.nass.usda.gov/Quick_Stats/Lite/index.php">https://www.nass.usda.gov/Quick_Stats/Lite/index.php</a>) This data spanned slightly over four decades, starting from 1976 to 2019 and approximately 347 counties. The counties mentioned in this dataset were used as a guide for collecting county wise weather and soil data. This dataset is referred to as Yield Table throughout this document and can also be found in the Supplementary Material folder.</p>
+</li>
+<li>
+<p>Historical crop failure values were calculated from the values in the Yield Table. This was done by subtracting the values for Total Area Harvested from values of Total Area Planted. The resulting comma separated file contained a column which had the crop failure values measured in acres. This table is referred to as the Crop Failure Table throughout this document and is also submitted in the Supplementary Material Folder. The Crop Failure Table was identical to the Yield Table except it did not have the historical crop yield data.</p>
+</li>
+<li>
+<p>The weather data used in this study was collected from the National Centers for Environmental Information database (Link: <a href="https://www.ncdc.noaa.gov/cdo-web/search">https://www.ncdc.noaa.gov/cdo-web/search</a>) which is a National Oceanic and Atmospheric Administration initiative. The data consisted of monthly maximum and minimum temperatures as well as precipitation for a single county from the year 1976 up to 2019 and this was arranged in a comma separated file. A total of 347 comma separated files were downloaded, one for each county.</p>
+</li>
+<li>
+<p>U.S County Centroid shapefile citation:
+U.S. Counties (1995) [downloaded file] National Weather Service, URL: <a href="https://www.weather.gov/gis/Counties">https://www.weather.gov/gis/Counties</a> [12/1/2021]</p>
+</li>
+<li>
+<p>U.S. Cities and towns shapefile citation:
+Cities and Towns NTAD (2020) [downloaded file] Homeland Infrastructure Foundation-Level Data, URL: <a href="https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::cities-and-towns-ntad/about">https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::cities-and-towns-ntad/about</a> [12/1/2021]</p>
+</li>
+<li>
+<p>The soil data used in this study was taken from the Soil Survey Geographic Database (SSURGO) and is available as GIS layer packages. In this regard the following datasets were used:
+a) USA SSURGO – Available Water Storage 0-150cm contains data pertaining to the amount of water stored in the upper 150cm of soil and is available to plants. Here is a citation for the dataset:
+USA SSURGO – Available Water Storage 0-150cm (2020) [Layer Package] National Resources Conservation Service on ArcGIS online, URL: <a href="https://ArcGIS.com">https://ArcGIS.com</a>, [12/1/2021]
+b) USA SSURGO – Loss Tolerance Factor represents the maximum rate of soil erosion that will not cause the loss of crop productivity of over time. Here is a citation for the dataset:
+USA SSURGO – Loss Tolerance Factor (2020) [Layer Package] National Resources Conservation Service on ArcGIS online, URL: <a href="https://ArcGIS.com">https://ArcGIS.com</a> [12/1/2021]
+c) USA SSURGO – Soil Potential Subsidence represents the potential decrease in surface elevation of a wet soil in response to drainage. Here is a citation for the dataset:
+USA SSURGO – Soil Potential Subsidence (2020) [Layer Package] National Resources Conservation Service on ArcGIS online, URL: <a href="https://ArcGIS.com">https://ArcGIS.com</a>, [12/1/2021]</p>
+</li>
+</ol>
+<p>METHOD:</p>
+<p>A combination of ARCGIS and the tidyverse package in R was utilized to acquire and preprocess the weather and soil data.</p>
+<p>With respect to the weather data downloaded from NOAA, the following preprocessing was done by using libraries within the R Studio environment: A) The comma separated files were in a long table format, where each row corresponded to the month and the associated year of when the data was recorded at a specific weather station. Each column corresponded to a specific weather variable which included maximum temperature, minimum temperature, and precipitation. B) To generalize this data and to prepare it according to the framework chosen for this analysis, mean values across all weather stations for maximum temperature, minimum temperature, and precipitation for a specific timepoint was computed and put in a long table format, where each column represents a specific weather variable recorded for a given month and each row represents the county, State, and the year it was recorded. In total there were thirty-six weather variables i.e., mean maximum and minimum temperature for each month and the mean precipitation value of each month of the year. This process is briefly illustrated in Fig 1. with an abridged example. C) Steps A) and B) was repeated for all the 347 counties. This resulted in the creation of 347 separate data frames. Each of them contained weather values for a specific county. D) The separate data frames were then combined into one table which contained the mean maximum temperature, mean minimum temperature and mean precipitation for each of the 347 counties recorded over a period of 1976 to 2019. This table is referred to as Climate Table.</p>
+<p>The soil data was preprocessed using a combination of Geoprocessing tools in ArcGIS Pro and the libraries within the R Studio environment. It should be mentioned that the soil datasets were collected separately for each state. The steps are: A) The county centroid dataset and the U.S. cities and towns dataset were added to an instance of an ArcGIS project. This was done by first adding the folder which contained the two shape files to the Catalog Pane by using the “Add Folder” button. Once it appeared in the Catalog Pane, the shape files were simply dragged onto the U.S. map B) Then the Feature Class to Feature Class Geoprocessing tool was used to include only the counties, cities, and towns for the specific State for which the soil data is being collected. C) The ArcGIS Pro “Living Atlas” was used to search the soil datasets used in this project. Once the datasets were located, they were added to project one by one. D) The Extract by Mask Geoprocessing tool was used on the soil datasets to clip the raster layers according to the polygon shape boundaries of the counties. This resulted in the creation of four new feature layers. One for each dataset. E) Then the Geoprocessing tool “Extract Values to Points” was used on each of the clipped raster layer from the previous step. This was done to create four separate layers and corresponding attribute tables containing soil data for specific point locations across different counties. The towns and cities were used as the reference points when extracting the values. F) All four of the attribute tables, one containing the available water storage, one containing loss tolerance factor values, one containing soil potential subsidence values and one containing soil hydric class values were exported from ArcGIS pro into four separate Excel files using the Geoprocessing tool Table to Excel. G) These Excel files were then read into R Studio for further preprocessing. Mean values for each of the soil variables were computed for each county in the State. The four individual tables containing four separate soil variable values for the same locations, were now combined into one table. This combined table consisted of the mean available water storage, loss tolerance factor, soil potential subsidence and soil hydric class values for each county of a given State. H) The step A) through G) was repeated for each of the 8 States. This resulted in 8 separate tables containing the soil variable values for each State in this study. I) These 8 separate tables were then combined into one table which contained the soil variable values for all the 347 counties across all the 8 states. This combined table is referred to as Soil Table.</p>
+<p>The Yield Table, Soil Table and Climate Table were combined into one data table for the final analysis. This combined data table was referred to as Yield Modelling Combined (44 predictors with one response variable)</p>
+<p>The Modelling Workflow is illustrated below</p>
+<figure><img src="https://SamMajumder.github.io/Sam_Portfolio/images/Workflow_YieldModelling.png"/>
+</figure>
+
+<p>The modelling methodology can be divided into the following parts A) Randomly dividing the dataset into a training and a testing dataset. A testing dataset is used to validate the prediction accuracy of the model on new data points. This approach minimizes the chances of overfitting. 75 % of the data was used as the training set and 25 % was used as the testing set. B) Identifying the most important variables on the training set by using feature selection. Variables in a model or a dataset are sometimes referred to as “features” in Machine Learning literature. This approach is also widely used in ecological studies to perform model selection. Feature Selection leads to the identification of the most important variables or “features” in the dataset with respect to the response variable. The important variables are used in the final model and the redundant variables are discarded. The feature selection method used in this study was Recursive Feature Elimination (RFE). It is a backwards selection process which uses a machine learning algorithm in the background to build multiple models and eliminates the redundant variables iteratively based on a ranking process. RFE enables the user to identify the best subset of features in the dataset. The machine learning algorithm used in RFE for this study is the Random Forest Regressor (RFR). The variables were eliminated based on the mean decrease of root mean square error. This is a method of variable importance used in random forests whereby the variables are ranked from the most important to the least important. The variable which was deemed to be the least important after an iteration was removed from the dataset. Through this process the training dataset was reduced to the contain only the most important features or variables. C) This reduced training set was then used to build predictive models by using the machine learning algorithm RFR. D) The predictive models were validated on the unseen testing dataset. The accuracy of their predictions was measured using root mean square error (RMSE).</p>
+<p>A few geoprocessing tools were used to generate the choropleth maps from the prediction files and the steps taken were A) The U.S. County shapefile was then added to the Catalog Pane by using the “Add Folder” button. Then it was added to the map. B) The Feature Class to Feature Class tool was then used to only include the counties of North Dakota. The coordinate system used was NAD 1983 StatePlane North Dakota South FIPS 3302. This coordinate system was specifically chosen because most of the counties in the test dataset use this specific coordinate system instead of NAD 1983 StatePlane North Dakota North FIPS 3301. C) A dark black outline symbology was chosen to represent the counties. D) The comma separated prediction files were then imported into ArcGIS Pro by using the Table-to-Table  tool. This imported the comma separated file as a Standalone Table. E) This Standalone Table was converted to an Attribute Table within a Point Feature Layer by using the XY Table to Point tool. This Point Layer contained the Predicted vs Actual values along with the area planted and the county centroids for each county. F) The Project tool was used to project the Point Feature Layer into a new coordinate system. This coordinate system used was NAD 1983 StatePlane North Dakota South FIPS 3302 G) The Spatial Join tool was used to add the Point Feature Layer to the county centroid Polygon Layer. This created a separate Polygon Feature Layer. H) A Graduated Color symbology was used to achieve the final look of the map. The values of both Crop Failure and Seed Yield were normalized by Planting Area</p>
+<p>RESULTS:</p>
+<p>An interactive dashboard showing the results from the analyses can be found here</p>
+<p><a href="https://sammajumder.github.io/Project_3A_Yield_Modelling/YieldModelling_Report.html">https://sammajumder.github.io/Project_3A_Yield_Modelling/YieldModelling_Report.html</a></p>
+<p>One of the primary goals of this analysis was to identify the most important factors that influence seed yield. A total of twenty-nine factors were identified to be the most important in predicting seed yield out of the forty-four predictors used. Year of cultivation was one of the most important factors in driving change in yield along with geographical location of the counties. Maximum and minimum temperatures as well as precipitation during the growing season were the most influential factors influencing change in crop yield. The months that fall within the growing season in most of the eight states used in this study are July, September, and August. Precipitation in February as well as maximum and minimum temperatures during January were deemed as important factors. January and February are outside of the growing season</p>
+<p>The top five most influential factors for crop yield are shown in the plot below:</p>
+<figure><img src="https://SamMajumder.github.io/Sam_Portfolio/images/Important_features_Yield.png"/>
+</figure>
+
+<p>Another important aim of this study was to build a robust predictive model which would be able to produce seed yield predictions close to the original historical values. The RFR based predictive model showed that about 60% percent of the variation in seed yield can be explained by the twenty-nine most important variables identified in the feature selection step.</p>
+<p>The plot below shows the performance of the recursive feature elimination algorithm with respect to behavior of RMSE in relation to the removal of features.</p>
+<figure><img src="https://SamMajumder.github.io/Sam_Portfolio/images/RFE_perf_yield.png"/>
+</figure>
+
+<p>The figure below illustrates the predicted versus the actual historical seed yield value for North Dakota, normalized by Total Planted Area. It is measured in pounds per acre. A darker shade on the map represents a higher seed yield and a lighter shade indicates lower seed yield. The predicted values were computed on the testing set because predictions on this evaluates a model’s potential to predict new and unseen data points. The root mean square error of the predictions made on the unseen testing set was 0.69 making it a highly accurate model when predicting new data points.</p>
+<figure><img src="https://SamMajumder.github.io/Sam_Portfolio/images/North%20Dakota%20Seed%20Yield.jpg"/>
+</figure>
+
+<p>Pic credits: Pietro Jeng from Unsplash</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://SamMajumder.github.io/Sam_Portfolio/" >
+    &copy;  Sam Majumder 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="https://www.instagram.com/sam_majumder_/" target="_blank" class="instagram ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:{{ .fill }};"/></svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+  
+    <a href="https://github.com/SamMajumder" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
+</html>
